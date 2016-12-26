@@ -1,0 +1,9 @@
+$ heroku create
+$ git push heroku master
+
+ensure that at least one instance of the app is running:
+$ heroku ps:scale web=1
+
+open the website
+$ heroku open
+
