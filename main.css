@@ -5,7 +5,7 @@ body, html {
 	color: #777;
 }
 
-.bgimg-1, .bgimg-2 {
+.home-bgimg-1, .home-bgimg-2 {
 	position: relative;
 	opacity: 0.65;
 	background-attachment: fixed;
@@ -14,26 +14,34 @@ body, html {
 	background-size: cover;
 }
 
-.bgimg-1 {
+.home-bgimg-1 {
 	background-image: url("boulder-bckgd1.jpg");
 	min-height: 100%;
 	background-size: 100%;
 }
 
-.bgimg-2 {
+.home-bgimg-2 {
 	background-image: url("boulder-bckgd2.jpg");
 	min-height: 100%;
 	background-size: 100%
 }
 
-.bgimg-3 {
+.home-bgimg-3 {
 	background-image: url("hanging_lake.jpg");
 	min-height: 100%;
 	background-size: 100%;
 }
 
-.csbgimg-1 {
-	
+.cs-bgimg-1 {
+	background-image: url("coding1.jpg");
+	min-height: 100%;
+	background-size: 100%;
+}
+
+.cs-bgimg-2 {
+	background-image: url("coding2.jpg");
+	min-height: 100%;
+	background-size: 100%;
 }
 
 #container {
@@ -50,6 +58,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: fixed;
+    z-index: 1;
     /*background-color:#333;*/
 }
 
@@ -63,6 +73,15 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+li a:hover {
+	/*background-color: #111*/
+	color: black;
+}
+
+.active {
+	color: #111;
 }
 
 element.style {
@@ -111,6 +130,6 @@ a {
 	text-decoration: none;
 }
 
-.active {
-	color: red;
+a:active {
+	background-color: gray;
 }

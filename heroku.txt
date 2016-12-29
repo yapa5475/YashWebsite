@@ -1,3 +1,9 @@
+1. make changes
+2. push to git
+3. push to heroku
+	git push heroku master
+
+
 $ heroku create
 $ git push heroku master
 

@@ -1,0 +1,10 @@
+Steps I took
+
+1. added files to git
+2. made app on Heroku
+
+$ heroku apps:create parekhyash
+Creating ⬢ parekhyash... done
+https://parekhyash.herokuapp.com/ | https://git.heroku.com/parekhyash.git
+
+:

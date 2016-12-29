@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+
+<script>
+	function fadeIn() {
+		$(document).ready(function(){
+			$("caption").hide(0).delay(100).fadeIn(1000)
+		});
+	}
+	fadeIn();
+</script>
+
 <html>
 	<head>
 		<title>Yash Parekh</title>
@@ -10,13 +20,13 @@
 
 	<div id="nav">
 		<ul>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html" class="active">Home</a></li>
 			<li><a href="#About">About Me</a></li>
 		</ul>
 	</div>
 
 	<body>
-		<div class="bgimg-1">
+		<div class="home-bgimg-1">
 			<div class="caption">
 				<a href="index.html"><span class="border">YASH PAREKH</span></a>
 			</div>
@@ -26,21 +36,21 @@
 			<h1 style="text-align:center">About Me</h1>
 		</div>
 
-		<a id="#About">
-			<div class="bgimg-2">
+		<a name="#About">
+			<div class="home-bgimg-2">
 				<div class="caption">
 					<a href="CS.html"><span class="border">Aspiring Computer Scientist</span></a>
 				</div>
 			</div>
 
-			<div class="bgimg-2">
+			<div class="home-bgimg-2">
 				<div class="caption">
 					<span class="border">Extracirricular Activities</span>
 				</div>
 			</div>
 		</a>
 
-		<div class="bgimg-3">
+		<div class="home-bgimg-3">
 			<div class="caption">
 
 		</div>
