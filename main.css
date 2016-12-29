@@ -5,6 +5,10 @@ body, html {
 	color: #777;
 }
 
+div.hidden{
+	display: none;
+}
+
 .home-bgimg-1, .home-bgimg-2 {
 	position: relative;
 	opacity: 0.65;
@@ -34,7 +38,7 @@ body, html {
 
 .cs-bgimg-1 {
 	/*background-color: red;*/
-	background-image: url("coding2.jpg");
+	background-image: url("coding2-orig.jpg");
 	/*width: 200%;*/
 }
 

@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 
 <html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<head>
 		<title>Yash Parekh</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
 		<script>
-			$(document).ready(function(event){
-				$("a").on('click', function(event){
-					if(this.hash !== ""){
-						event.preventDefault();
-
-						var hash = this.hash;
-
-						$('html, body').animate({
-							scrollTop:$(hash).offest().top}, 800, function(){
-								window.location.hash = hash;
-							});
-							}
-						})
-					}
-				}
-			})
+			$(document).ready(function(){
+				$('div.hidden').fadeIn(1000);
+			};
 		</script>
 	</head>
 	<link rel="Stylesheet" type="text/css" href="main.css">
@@ -34,7 +22,7 @@
 
 	<body>
 		<div class="home-bgimg-1">
-			<div class="caption">
+			<div class="hidden">
 				<a href="index.html"><span class="border">YASH PAREKH</span></a>
 			</div>
 		</div>
