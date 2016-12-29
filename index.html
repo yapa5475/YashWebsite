@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 
-<script>
-	function fadeIn() {
-		$(document).ready(function(){
-			$("caption").hide(0).delay(100).fadeIn(1000)
-		});
-	}
-	fadeIn();
-</script>
-
 <html>
 	<head>
 		<title>Yash Parekh</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(event){
+				$("a").on('click', function(event){
+					if(this.hash !== ""){
+						event.preventDefault();
+
+						var hash = this.hash;
+
+						$('html, body').animate({
+							scrollTop:$(hash).offest().top}, 800, function(){
+								window.location.hash = hash;
+							});
+							}
+						})
+					}
+				}
+			})
+		</script>
 	</head>
 	<link rel="Stylesheet" type="text/css" href="main.css">
-	<shadow>	
-	</shadow>
-
 
 	<div id="nav">
 		<ul>
@@ -33,22 +40,22 @@
 		</div>
 
 		<div style="color: #777;background-color: white;text-align: center;padding: 5% 5;text-align:justify;">
-			<h1 style="text-align:center">About Me</h1>
+			<a name="About">
+				<h1 style="text-align:center">About Me</h1>
+			</a>
 		</div>
 
-		<a name="#About">
-			<div class="home-bgimg-2">
-				<div class="caption">
-					<a href="CS.html"><span class="border">Aspiring Computer Scientist</span></a>
-				</div>
+		<div class="home-bgimg-2">
+			<div class="caption">
+				<a href="CS.html"><span class="border">Aspiring Computer Scientist</span></a>
 			</div>
+		</div>
 
-			<div class="home-bgimg-2">
-				<div class="caption">
-					<span class="border">Extracirricular Activities</span>
-				</div>
+		<div class="home-bgimg-2">
+			<div class="caption">
+				<span class="border">Extracirricular Activities</span>
 			</div>
-		</a>
+		</div>
 
 		<div class="home-bgimg-3">
 			<div class="caption">

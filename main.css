@@ -33,15 +33,15 @@ body, html {
 }
 
 .cs-bgimg-1 {
-	background-image: url("coding1.jpg");
-	min-height: 100%;
-	background-size: 100%;
+	/*background-color: red;*/
+	background-image: url("coding2.jpg");
+	/*width: 200%;*/
 }
 
 .cs-bgimg-2 {
-	background-image: url("coding2.jpg");
-	min-height: 100%;
-	background-size: 100%;
+	/*background-image: url("coding2.jpg");*/
+	height: 100%;
+	width: 200%;
 }
 
 #container {
