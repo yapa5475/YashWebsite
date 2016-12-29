@@ -4,12 +4,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<head>
 		<title>Yash Parekh</title>
-		<!--
+		
 		<script>
-			$(document).ready(function(){
-				$('div.hidden').fadeIn(1000);
-			};
-		</script>-->
+			var string = "YASH PAREKH", stringCount = 0
+			setInterval(function(){
+				$('#fadeIn').append(string[stringCount]);
+				stringCount +=1;
+			},60);
+		</script>
+
 	</head>
 	<link rel="Stylesheet" type="text/css" href="main.css">
 
@@ -23,7 +26,13 @@
 	<body>
 		<div class="home-bgimg-1">
 			<div class="caption">
-				<a href="index.html"><span class="border">YASH PAREKH</span></a>
+				<div>
+					<a href="index.html">
+						<span id="fadeIn" class="border">
+							
+						</span>
+					</a>
+				</div>
 			</div>
 		</div>
 
