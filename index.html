@@ -5,15 +5,32 @@
 	<head>
 		<title>Yash Parekh</title>
 		
-		<script>
-			var string = "YASH PAREKH", stringCount = 0
+		<script type="text/javascript">
+
+		</script>
+
+		<script type="text/javascript">
+			/*WORKS - YASH PAREKH*/
+			var YASHPAREKHTITLE = "YASH PAREKH", stringCount = 0
 			setInterval(function(){
-				$('#fadeIn').append(string[stringCount]);
+				$('#YashParekhTitleAppear').append(YASHPAREKHTITLE[stringCount]);
 				stringCount +=1;
-			},60);
+			},75);
+
+			var portfolio = "Personal Portfolio Website", stringCount2 = 0
+			setInterval(function(){
+				if($(window).scrollTop() > 1){
+					$('#portfolio').append(portfolio[stringCount2]);
+					stringCount2 +=1;
+				}
+			},75);
+
+
+
 		</script>
 
 	</head>
+
 	<link rel="Stylesheet" type="text/css" href="main.css">
 
 	<div id="nav">
@@ -23,12 +40,17 @@
 		</ul>
 	</div>
 
-	<body>
+	
+	<div id="snow">
+	</div>
 		<div class="home-bgimg-1">
 			<div class="caption">
 				<div>
 					<a href="index.html">
-						<span id="fadeIn" class="border">
+						<span id="YashParekhTitleAppear" class="border">
+
+						</span><br><br><br>
+						<span id="portfolio" class="border">
 							
 						</span>
 					</a>
@@ -36,36 +58,38 @@
 			</div>
 		</div>
 
-		<div style="color: #777;background-color: white;text-align: center;padding: 5% 5;text-align:justify;">
+
+		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
 			<a name="About">
 				<h1 style="text-align:center">About Me</h1>
 			</a>
 		</div>
 
-		<div class="home-bgimg-2">
+	<div id="snow">
+	</div>
+		<div class="home-bgimg-about">
 			<div class="caption">
-				<a href="CS.html"><span class="border">Aspiring Computer Scientist</span></a>
+				<a href="CS.html"><span id="fadeIn2" class="border">Aspiring Computer Scientist</span></a>
 			</div>
 		</div>
 
-		<div class="home-bgimg-2">
+		<div class="home-bgimg-about">
 			<div class="caption">
 				<span class="border">Extracirricular Activities</span>
 			</div>
 		</div>
 
-		<div class="home-bgimg-3">
+		<div class="home-bgimg-contact">
 			<div class="caption">
 
 		</div>
 
-		<div style="color: #777;background-color: white;text-align: center;padding: 5% 5;text-align:justify;">
+		<div style="color: #777;background-color: white;text-align: center;padding: .5% ;text-align:justify;">
 			<h1 style="text-align:center">Contact</h1>
 
 		</div>
 
 		<!--<div class=-->
-
-	</body>
+		</div>
 
 </html>

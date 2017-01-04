@@ -1,19 +1,90 @@
 <!DOCTYPE html>
+
 <html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<head>
 		<title>CS-YashParekh</title>
+
+		<script type="text/javascript">
+			var CSTITLE = "COMPUTER SCIENTIST", stringCount = 0;
+			setInterval(function(){
+				$('#CSTitleAppear').append(CSTITLE[stringCount]);
+				stringCount +=1;
+			},75);
+
+			var since2014 = "Since 2014", stringCount2 = 0;
+			setInterval(function(){
+				if($(window).scrollTop() > 1){
+					$('#test').append(since2014[stringCount2]);
+					stringCount2 +=1;
+				}
+			},75);
+			
+		</script>
+
 	</head>
+
 	<link rel="Stylesheet" type="text/css" href="main.css">
 
-	<div id="nav">
+	<div id="csnav">
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="#About">About Me</a></li>
+			<!--<li><a href="#About">About Me</a>li>-->
 		</ul>
 	</div>
 	
 	<body>
+	<div class="sidenav">
+		<a style="font-size: 125%;" href="#Top">Top</a>
+		<a style="font-size: 125%;" href="#Experience">Experience</a>
+		<a style="font-size: 125%;" href="#Courses">Courses</a>
+		<a style="font-size: 125%;" href="#More">More</a>
+
+
+	</div>
 		<div class="cs-bgimg-1">
+			<div class="caption">
+				<div>
+					<a href="CS.html">
+						<span id="CSTitleAppear" class="border" name="Top">
+
+						</span><br><br><br>
+						<span id="test" class="border">
+							
+						</span>
+					
+				</div>
+			</div>
 		</div>
+
+		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
+			<a name="Experience">
+				<h1 style="text-align:center">Experience</h1>
+			</a>
+		</div>
+		<div class="cs-bgimg-experience">
+			<br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="echostar.jpg" alt="Echostar" style="height:100px;">
+		</div>
+
+		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
+			<a name="Courses">
+				<h1 style="text-align:center">Courses</h1>
+			</a>
+		</div>
+		<div class="cs-bgimg-courses">
+			<br><br>
+			<div class="boxed">
+				<h1>abc</h1>
+			</div>
+		</div>
+
+		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
+			<a name="Courses">
+				<h1 style="text-align:center">More</h1>
+			</a>
+		</div>
+		
+
 	</body>
 </html>
