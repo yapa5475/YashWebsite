@@ -11,21 +11,23 @@
 
 		<script type="text/javascript">
 			/*WORKS - YASH PAREKH*/
-			var YASHPAREKHTITLE = "YASH PAREKH", stringCount = 0
-			setInterval(function(){
-				$('#YashParekhTitleAppear').append(YASHPAREKHTITLE[stringCount]);
-				stringCount +=1;
-			},75);
+			function titleAppear() {
+				var YASHPAREKHTITLE = "YASH PAREKH", stringCount = 0
+				setInterval(function(){
+					$('#YashParekhTitleAppear').append(YASHPAREKHTITLE[stringCount]);
+					stringCount +=1;
+				},75);
 
-			var portfolio = "Personal Portfolio Website", stringCount2 = 0
-			setInterval(function(){
-				if($(window).scrollTop() > 1){
-					$('#portfolio').append(portfolio[stringCount2]);
-					stringCount2 +=1;
-				}
-			},75);
+				var portfolio = "Personal Portfolio Website", stringCount2 = 0
+				setInterval(function(){
+					if($(window).scrollTop() > 1){
+						$('#portfolio').append(portfolio[stringCount2]);
+						stringCount2 +=1;
+					}
+				},75);
+			}
 
-
+			titleAppear();
 
 		</script>
 
@@ -41,8 +43,8 @@
 	</div>
 
 	
-	<div id="snow">
-	</div>
+	<!--<div id="snow>
+	</div>-->
 		<div class="home-bgimg-1">
 			<div class="caption">
 				<div>

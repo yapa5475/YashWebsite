@@ -6,21 +6,33 @@
 		<title>CS-YashParekh</title>
 
 		<script type="text/javascript">
-			var CSTITLE = "COMPUTER SCIENTIST", stringCount = 0;
-			setInterval(function(){
-				$('#CSTitleAppear').append(CSTITLE[stringCount]);
-				stringCount +=1;
-			},75);
+			function titleAppear(){
+				var CSTITLE = "COMPUTER SCIENTIST", stringCount = 0;
+				var since2014 = "Since 2014", stringCount2 = 0;
 
-			var since2014 = "Since 2014", stringCount2 = 0;
-			setInterval(function(){
-				if($(window).scrollTop() > 1){
-					$('#test').append(since2014[stringCount2]);
-					stringCount2 +=1;
-				}
-			},75);
+				setInterval(function(){
+					$('#CSTitleAppear').append(CSTITLE[stringCount]);
+					stringCount +=1;
+				},75);
+				setInterval(function(){
+					if($(window).scrollTop() > 1){
+						$('#test').append(since2014[stringCount2]);
+						stringCount2 +=1;
+					}
+				},75);
+			}
+
+			titleAppear();
 			
 		</script>
+<!--
+		<script type="text/javascript">
+			var a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ", stringCount3 = 0;
+			setInterval(function(){
+				$('#test').append(a[stringCount3]);
+				stringCount3 +=1;
+			},75);
+		</script>-->
 
 	</head>
 
@@ -37,10 +49,14 @@
 	<div class="sidenav">
 		<a style="font-size: 125%;" href="#Top">Top</a>
 		<a style="font-size: 125%;" href="#Experience">Experience</a>
+		<a style="font-size: 125%;" href="#Skills">Skills</a>
 		<a style="font-size: 125%;" href="#Courses">Courses</a>
 		<a style="font-size: 125%;" href="#More">More</a>
 
 
+	</div>
+	<!--<div><span id="test"></span></div>-->
+	<div id="snow">
 	</div>
 		<div class="cs-bgimg-1">
 			<div class="caption">
@@ -62,9 +78,26 @@
 				<h1 style="text-align:center">Experience</h1>
 			</a>
 		</div>
+
 		<div class="cs-bgimg-experience">
 			<br><br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="echostar.jpg" alt="Echostar" style="height:100px;">
+
+			<h2>
+			<img src="echostar.jpg" alt="Echostar" style="height:100px;"/>&nbsp;&nbsp;&nbsp;&nbsp;Intern at Echostar Corporation</h2>
+
+			<h2>
+			&nbsp;&nbsp;&nbsp;&nbsp;CU Boulder Computer Science</h2>
+
+		</div>
+
+		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
+			<a name="Skills">
+				<h1 style="text-align:center">Skills</h1>
+			</a>
+		</div>
+
+		<div class="cs-bgimg-skills">
+			<br><br>
 		</div>
 
 		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
@@ -72,6 +105,7 @@
 				<h1 style="text-align:center">Courses</h1>
 			</a>
 		</div>
+
 		<div class="cs-bgimg-courses">
 			<br><br>
 			<div class="boxed">

@@ -45,25 +45,34 @@ div.hidden{
 	/*width: 200%;*/
 }
 
+.cs-bgimg-experience {
+	background-image: url("coding-experience.jpg");
+	min-height: 86%;
+	background-size: 100%;
+}
+
+.cs-bgimg-skills {
+	background-image: url("coding-skills.jpg");
+	min-height: 88%;
+}
+
 .cs-bgimg-courses {
-	background-image: url("coding2.jpg");
+	background-image: url("coding-courses.jpg");
 	min-height: 90%;
 	background-size: 100%;
 }
 
-.cs-bgimg-experience {
-	background-image: url("coding3.jpg");
-	min-height: 93%;
-	background-size: 100%;
-}
 
 #container {
 	position: fixed;
 	background-color: white;
 }
 
+
 nav {
 	width: 100%;
+	z-index: 0;
+	position: fixed;
 }
 
 #csnav {
@@ -151,6 +160,9 @@ span.border {
 	letter-spacing: 10px;
 }
 
+/*FONT*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
 
 h1 {
 	/*display: block;*/
@@ -159,6 +171,8 @@ h1 {
 	font-size: 30px;
 	font-style: italic;
 	letter-spacing: 2px;
+	font-family: "Open Sans", "sans-serif";
+	font-weight: lighter;
 	/*
 	font-family: sans-serif;
 	font-size: 24px;
@@ -166,6 +180,14 @@ h1 {
 }
 
 h2 {
+	text-align:center;
+	color: black;
+	font-size: 30px;
+	font-family: "Open Sans", "sans-serif";
+	font-weight: lighter;
+	/*font-style: italic;*/
+	/*letter-spacing: 2px;*/
+	/*font-family: "Tahoma";*/
 
 }
 
@@ -190,6 +212,8 @@ a:active {
 	margin: auto;
 }
 
+/*SNOW*/
+
 #snow {
 	background: none;
 	/*font-family: Androgyne;*/
@@ -199,7 +223,7 @@ a:active {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index:1;
+	z-index:0;
 	-webkit-animation: snow 10s linear infinite;
 	-moz-animation: snow 10s linear infinite;
 	-ms-animation: snow 10s linear infinite;
