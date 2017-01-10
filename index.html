@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 
+<!--
+	TO DO:
+		Java
+		Database
+-->
+
 <html>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<head>
 		<title>Yash Parekh</title>
 		
 		<script type="text/javascript">
-
-		</script>
-
-		<script type="text/javascript">
 			/*WORKS - YASH PAREKH*/
-			function titleAppear() {
+			function titlesAppear() {
 				var YASHPAREKHTITLE = "YASH PAREKH", stringCount = 0
 				setInterval(function(){
 					$('#YashParekhTitleAppear').append(YASHPAREKHTITLE[stringCount]);
@@ -25,59 +27,97 @@
 						stringCount2 +=1;
 					}
 				},75);
+
+
 			}
 
-			titleAppear();
+			function navAppear() {
+				var Home = "Home", stringCount = 0
+				setInterval(function(){
+					$('#home').append(Home[stringCount]);
+					stringCount += 1;
+				}, 75);
+
+				var About = "About Me", stringCount2 = 0
+				setInterval(function(){
+					$('#about').append(About[stringCount2]);
+					stringCount2 += 1;
+				}, 75);
+
+				var Yash = "hkeraP hsaY", stringCount3 = Yash.length;
+				setInterval(function(){
+					$('#Yash').append(Yash[stringCount3]);
+					stringCount3 -= 1;
+				}, 75);
+
+			}
+
+			navAppear();
+			titlesAppear();
+
 
 		</script>
 
+		<link rel="Stylesheet" type="text/css" href="main.css">
+
 	</head>
 
-	<link rel="Stylesheet" type="text/css" href="main.css">
 
 	<div id="nav">
 		<ul>
-			<li><a href="index.html" class="active">Home</a></li>
-			<li><a href="#About">About Me</a></li>
+			<li style="z-index: 1; position: relative;"><a href="index.html" class="active" id="home"></a></li>
+			<li style="z-index: 1; position: relative;"><a href="#About" id="about"></a></li>
+
+			<li style="position: fixed; padding-left: 90%;"><a id="Yash"></a></li>
 		</ul>
 	</div>
 
-	
+	<div id="rightnav">
+		<ul>
+			<li><a>Yash Parekh</a></li>
+		</ul>		
+	</div>
+
+	<body>
 	<!--<div id="snow>
 	</div>-->
 		<div class="home-bgimg-1">
 			<div class="caption">
 				<div>
 					<a href="index.html">
-						<span id="YashParekhTitleAppear" class="border">
-
-						</span><br><br><br>
+						<span id="YashParekhTitleAppear" class="border"></span><br><br><br>
 						<span id="portfolio" class="border">
 							
 						</span>
 					</a>
 				</div>
-			</div>
-		</div>
+			
 
 
-		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
+			<br><br><br><br><br><br><br><br><br>
 			<a name="About">
-				<h1 style="text-align:center">About Me</h1>
+					<h1 style="text-align:center"><b>About Me</b></h1>
 			</a>
+			</div>
 		</div>
 
 	<div id="snow">
 	</div>
+
 		<div class="home-bgimg-about">
 			<div class="caption">
-				<a href="CS.html"><span id="fadeIn2" class="border">Aspiring Computer Scientist</span></a>
+				<a href="CS.html">
+					<span id="AspiringCS" class="border">Aspiring Computer Scientist
+					</span>
+				</a>
 			</div>
 		</div>
 
 		<div class="home-bgimg-about">
 			<div class="caption">
-				<span class="border">Extracirricular Activities</span>
+				<a href="extracirricular.html">
+					<span class="border">Other Interests</span>
+				</a>
 			</div>
 		</div>
 
@@ -86,12 +126,13 @@
 
 		</div>
 
+		<!--
 		<div style="color: #777;background-color: white;text-align: center;padding: .5% ;text-align:justify;">
 			<h1 style="text-align:center">Contact</h1>
 
 		</div>
-
+		-->
 		<!--<div class=-->
 		</div>
-
+		</body>
 </html>

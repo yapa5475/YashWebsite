@@ -1,124 +1,178 @@
 <!DOCTYPE html>
 
+<!--
+	TO DO:
+		Java
+		Database
+-->
+
 <html>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<head>
-		<title>CS-YashParekh</title>
-
+		<title>CS-Yash Parekh</title>
+		
 		<script type="text/javascript">
-			function titleAppear(){
-				var CSTITLE = "COMPUTER SCIENTIST", stringCount = 0;
-				var since2014 = "Since 2014", stringCount2 = 0;
-
+			/*WORKS - YASH PAREKH*/
+			function titlesAppear() {
+				var CSTITLE = "COMPUTER SCIENTIST", stringCount = 0
 				setInterval(function(){
 					$('#CSTitleAppear').append(CSTITLE[stringCount]);
 					stringCount +=1;
 				},75);
+
+				var date = "Since 2014", stringCount2 = 0
 				setInterval(function(){
 					if($(window).scrollTop() > 1){
-						$('#test').append(since2014[stringCount2]);
+						$('#date').append(date[stringCount2]);
 						stringCount2 +=1;
 					}
 				},75);
+
+
 			}
 
-			titleAppear();
-			
+			function navAppear() {
+				var Home = "Home", stringCount = 0
+				setInterval(function(){
+					$('#home').append(Home[stringCount]);
+					stringCount += 1;
+				}, 75);
+
+				var Yash = "hkeraP hsaY", stringCount1 = Yash.length;
+				setInterval(function(){
+					$('#Yash').append(Yash[stringCount1]);
+					stringCount1 -= 1;
+				}, 75);
+
+			}
+
+
+			function sideNavAppear() {
+				var Top = "Top", stringCount = 0
+				setInterval(function(){
+					$('#Top').append(Top[stringCount]);
+					stringCount += 1;
+				}, 75);
+
+				var Experience = "Experience", stringCount1 = 0
+				setInterval(function(){
+					$('#Experience').append(Experience[stringCount1]);
+					stringCount1 += 1;
+				}, 75);
+
+				var Skills = "Skills", stringCount2 = 0
+				setInterval(function(){
+					$('#Skills').append(Skills[stringCount2]);
+					stringCount2 += 1;
+				}, 75);
+
+				var More = "More", stringCount3 = 0
+				setInterval(function(){
+					$('#More').append(More[stringCount3]);
+					stringCount3 += 1;
+				}, 75);				
+			}
+
+			navAppear();
+			titlesAppear();
+			sideNavAppear();
+
 		</script>
-<!--
-		<script type="text/javascript">
-			var a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ", stringCount3 = 0;
-			setInterval(function(){
-				$('#test').append(a[stringCount3]);
-				stringCount3 +=1;
-			},75);
-		</script>-->
+		<link rel="Stylesheet" type="text/css" href="main.css">
 
 	</head>
 
-	<link rel="Stylesheet" type="text/css" href="main.css">
 
-	<div id="csnav">
+	<div id="adjustednav">
 		<ul>
-			<li><a href="index.html">Home</a></li>
+			<li style="z-index: 1; position: relative;"><a href="index.html" id="home"></a></li>
 			<!--<li><a href="#About">About Me</a>li>-->
+			<li style="position: fixed; padding-left: 80%; color: black;"><a id="Yash"></a></li>
+
 		</ul>
 	</div>
-	
-	<body>
+
 	<div class="sidenav">
-		<a style="font-size: 125%;" href="#Top">Top</a>
-		<a style="font-size: 125%;" href="#Experience">Experience</a>
-		<a style="font-size: 125%;" href="#Skills">Skills</a>
-		<a style="font-size: 125%;" href="#Courses">Courses</a>
-		<a style="font-size: 125%;" href="#More">More</a>
-
-
+		<a style="font-size: 125%;" href="#Top1" id="Top"></a>
+		<a style="font-size: 125%;" href="#Experience1" id="Experience"></a>
+		<a style="font-size: 125%;" href="#Skills1" id="Skills"></a>
+		<a style="font-size: 125%;" href="#More1" id="More"></a>
 	</div>
-	<!--<div><span id="test"></span></div>-->
-	<div id="snow">
-	</div>
+
+	<body>
+	<!--<div id="snow>
+	</div>-->
+		<a name="Top1">
 		<div class="cs-bgimg-1">
 			<div class="caption">
 				<div>
-					<a href="CS.html">
-						<span id="CSTitleAppear" class="border" name="Top">
+					<a href="index.html">
+						<span id="CSTitleAppear" class="border"></span><br><br><br>
 
-						</span><br><br><br>
-						<span id="test" class="border">
+						<span id="date" class="border">
 							
 						</span>
-					
+					</a>
 				</div>
+		</a>
+
+
+			<br><br><br><br><br><br><br>
+		<a name="Experience1">
+			<h1 style="text-align:center"><b>Experience</b></h1>
+		</a>
 			</div>
 		</div>
 
-		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
-			<a name="Experience">
-				<h1 style="text-align:center">Experience</h1>
-			</a>
+		<div id="snow">
 		</div>
 
-		<div class="cs-bgimg-experience">
-			<br><br>
-
-			<h2>
-			<img src="echostar.jpg" alt="Echostar" style="height:100px;"/>&nbsp;&nbsp;&nbsp;&nbsp;Intern at Echostar Corporation</h2>
-
-			<h2>
-			&nbsp;&nbsp;&nbsp;&nbsp;CU Boulder Computer Science</h2>
-
+		<div class="home-bgimg-about">
+			<div class="caption">
+				<a href="echostar.html">
+					<span class="border" style="z-index: 0">Echostar Corporation
+					</span>
+				</a>
+			</div>
 		</div>
 
-		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
-			<a name="Skills">
-				<h1 style="text-align:center">Skills</h1>
-			</a>
-		</div>
-
-		<div class="cs-bgimg-skills">
+		<div class="home-bgimg-about">
+			<div class="caption">
+				<span class="border">University of Colorado Boulder</span>
 			
-		</div>
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<a name="Skills1">
+				<h1 style="text-align:center"><b>Skills</b></h1>
 
-		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
-			<a name="Courses">
-				<h1 style="text-align:center">Courses</h1>
+
 			</a>
-		</div>
 
-		<div class="cs-bgimg-courses">
-			<br><br>
-			<div class="boxed">
-				<h1>abc</h1>
+
+
 			</div>
+
 		</div>
 
-		<div style="background-color: rgba(0,0,0,0);text-align: center;padding: 0% 0;text-align:justify;">
-			<a name="Courses">
-				<h1 style="text-align:center">More</h1>
-			</a>
-		</div>
-		
 
-	</body>
+
+		<div class="home-bgimg-contact">
+
+
+
+		</div>
+
+
+
+
+
+	<br>
+				<!--
+		<div style="color: #777;background-color: white;text-align: center;padding: .5% ;text-align:justify;">
+			<h1 style="text-align:center">Contact</h1>
+
+		</div>
+		-->
+		<!--<div class=-->
+		</div>
+		</body>
 </html>

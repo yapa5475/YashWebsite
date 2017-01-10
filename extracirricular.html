@@ -1,18 +1,80 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>CS-YashParekh</title>
-	</head>
-	<link rel="Stylesheet" type="text/css" href="main.css">
 
-	<div id="nav">
+<!--
+	TO DO:
+		Java
+		Database
+-->
+
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<head>
+		<title>EC-YashParekh</title>
+
+		<script type="text/javascript">
+			function titlesAppear(){
+				var ECTITLE = "Extracirricular Activities", stringCount = 0
+				setInterval(function(){
+					$('#ECTitleAppear').append(ECTITLE[stringCount]);
+					stringCount +=1;
+				},75);
+			}
+
+			titlesAppear();
+
+			function navAppear(){
+				var Home = "Home", stringCount = 0
+				setInterval(function(){
+					$('#home').append(Home[stringCount]);
+					stringCount += 1;
+				}, 75);
+
+				var Yash = "hkeraP hsaY", stringCount1 = Yash.length;
+				setInterval(function(){
+					$('#Yash').append(Yash[stringCount1]);
+					stringCount1 -= 1;
+				}, 75);
+			}
+
+			navAppear();
+		</script>
+
+		<link rel="Stylesheet" type="text/css" href="main.css">
+
+	</head>
+
+	<div id="adjustednav">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#About">About Me</a></li>
+			<li style="z-index: 1; position: relative;"><a href="index.html" class="active" id="home"></a></li>
+
+			<li style="position: fixed; padding-left: 80%; color: black"><a id="Yash"></a></li>
+
 		</ul>
+	</div>
+
+	<div class="sidenav">
+		<a style="font-size: 125%;" href="#Top">Top</a>
+		<a style="font-size: 125%;" href="#Tab1">Tab 1</a>
+		<a style="font-size: 125%;" href="#Tab2">Tab 2</a>
+		<a style="font-size: 125%;" href="#Tab3">Tab 3</a>
+		<a style="font-size: 125%;" href="#Tab4">More</a>
 	</div>
 	
 	<body>
+		<div class="ec-bgimg-1">
+			<div class="caption">
+				<div>
+					<a href="extracirricular.html">
+						<span id="ECTitleAppear" class="border"></span><br><br><br>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="snow">
+		</div>
+
+		<div class="home-bgimg-about">
+		</div>
 
 	</body>
 </html>
