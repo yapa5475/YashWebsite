@@ -7,7 +7,7 @@
 -->
 
 <html>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="jquery-3.1.1.js"></script>
 	<head>
 		<title>CS-Yash Parekh</title>
 		<link rel="icon" href="yicon.jpg">
@@ -16,16 +16,16 @@
 		<script type="text/javascript">
 			/*WORKS - YASH PAREKH*/
 			function titlesAppear() {
-				var CSTITLE = "COMPUTER SCIENTIST", stringCount = 0
+				var BOULDERTITLE = "UNIVERSITY OF COLORADO BOULDER", stringCount = 0
 				setInterval(function(){
-					$('#CSTitleAppear').append(CSTITLE[stringCount]);
+					$('#BoulderTitleAppear').append(BOULDERTITLE[stringCount]);
 					stringCount +=1;
 				},75);
 
-				var date = "Since 2014", stringCount2 = 0
+				var location = "Boulder, CO", stringCount2 = 0
 				setInterval(function(){
 					if($(window).scrollTop() > 1){
-						$('#date').append(date[stringCount2]);
+						$('#location').append(location[stringCount2]);
 						stringCount2 +=1;
 					}
 				},75);
@@ -56,9 +56,9 @@
 					stringCount += 1;
 				}, 75);
 
-				var Experience = "Experience", stringCount1 = 0
+				var Major = "CS Courses", stringCount1 = 0
 				setInterval(function(){
-					$('#Experience').append(Experience[stringCount1]);
+					$('#Major').append(Major[stringCount1]);
 					stringCount1 += 1;
 				}, 75);
 
@@ -80,6 +80,15 @@
 			sideNavAppear();
 
 		</script>
+
+		<!--Trying jquery-->
+		<script>
+			$(document).ready(function(){
+				$("#introtop").click(function () {
+					$("BPC").show();
+				})
+			})
+		</script>
 		<link rel="Stylesheet" type="text/css" href="main.css">
 
 	</head>
@@ -96,7 +105,7 @@
 
 	<div class="sidenav">
 		<a style="font-size: 125%;" href="#Top1" id="Top"></a>
-		<a style="font-size: 125%;" href="#Experience1" id="Experience"></a>
+		<a style="font-size: 125%;" href="#Courses" id="Major"></a>
 		<a style="font-size: 125%;" href="#Skills1" id="Skills"></a>
 		<a style="font-size: 125%;" href="#More1" id="More"></a>
 	</div>
@@ -105,49 +114,85 @@
 	<!--<div id="snow>
 	</div>-->
 		<a name="Top1">
-		<div class="cs-bgimg-1">
+		<div class="boulder-bgimg-1">
 			<div class="caption">
 				<div>
 					<a href="index.html">
-						<span id="CSTitleAppear" class="border"></span><br><br><br>
+						<span id="BoulderTitleAppear" class="border"></span><br><br><br>
 
-						<span id="date" class="border"></span>
+						<span id="location" class="border"></span>
 					</a>
 				</div>
 		</a>
 
 
 			<br><br><br><br><br><br><br>
-		<a name="Experience1">
-			<h1 style="text-align:center"><b>Experience</b></h1>
+		<a name="Courses">
+			<h1 style="text-align:center"><b>Computer Science Courses</b></h1>
 		</a>
 			</div>
 		</div>
 
-			<div id="snow">
-			</div>
+		<div id="snow">
+		</div>
 
-			<div class="home-bgimg-about">
-				<div class="caption">
-					<a href="echostar.html">
-						<span class="border" style="z-index: 0">Echostar Corporation
-						</span>
-					</a>
-				</div>
+		<div class="home-bgimg-about">
+			<div class="caption">
+				<a href="#introtop">
+					<span class="border" style="z-index: 0" onclick="Intro()">Intro to Programming 
+					</span></a>				
 			</div>
+		</div>
 
-			<div class="home-bgimg-about">
-				<div class="caption">
-					<a href="boulder.html">
-						<span class="border">University of Colorado Boulder</span>
-					</a>
+		<div class="home-bgimg-about">
+			<div class="caption">
+				<a href="#datastruct">
+					<span class="border">Data Structures</span>
+					</span></a>
+					
+					
+				</a>
+			</div>
+		</div>
+
+		<div class="home-bgimg-about">
+			<div class="caption">
+				<a href="#csystems">
+					<span class="border">Computer Systems</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="home-bgimg-about">
+			<div class="caption">
+				<a href="#discstruct">
+					<span class="border">Discrete Structures</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="home-bgimg-about">
+			<div class="caption">
+				<a href="#HCC">
+					<span class="border">Human Centered Computing</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="home-bgimg-about">
+			<div class="caption">
+				<a href="#algo">
+					<span class="border">Algorithms</span>
+				</a>
+			</div>
+		</div>
 			
 			<br><br><br><br><br><br><br><br><br><br><br><br>
-		<a name="Skills1">
-			<h1 style="text-align:center"><b>Skills</b></h1>
+			<a name="Skills1">
+				<h1 style="text-align:center"><b>Skills</b></h1>
 
 
-		</a>
+			</a>
 
 
 

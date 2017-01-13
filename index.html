@@ -9,8 +9,9 @@
 <html>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<head>
-		<title>Yash Parekh</title>
-		
+		<title>Yash Parekh</title>	
+		<link rel="icon" href="yicon.jpg">
+
 		<script type="text/javascript">
 			/*WORKS - YASH PAREKH*/
 			function titlesAppear() {
@@ -50,6 +51,12 @@
 					stringCount3 -= 1;
 				}, 75);
 
+				var Contact = "tcatnoC", stringCount4 = Contact.length;
+				setInterval(function(){
+					$('#Contact').append(Contact[stringCount4]);
+					stringCount4 -= 1;
+				}, 75);
+
 			}
 
 			navAppear();
@@ -65,18 +72,23 @@
 
 	<div id="nav">
 		<ul>
-			<li style="z-index: 1; position: relative;"><a href="index.html" class="active" id="home"></a></li>
-			<li style="z-index: 1; position: relative;"><a href="#About" id="about"></a></li>
+			<li style="z-index: 2; position: relative;"><a href="index.html" class="active" id="home"></a></li>
+			<li style="z-index: 2; position: relative;"><a href="#About" id="about"></a></li>
 
+			<li style="z-index: 1; position: fixed; padding-left: 82.5%";><a id="Contact" href="contactyash.html"></a></li>
 			<li style="position: fixed; padding-left: 90%;"><a id="Yash"></a></li>
 		</ul>
 	</div>
-
+	
+	<!--
+	<img src="linkedin.png" style="position: absolute; top: 0px; right: 0px height: 3%; width: 5%; z-index: 1; padding-bottom: 10; padding-left: 80%;">
+	-->
+	<!--
 	<div id="rightnav">
 		<ul>
 			<li><a>Yash Parekh</a></li>
-		</ul>		
-	</div>
+		</ul>
+	</div>-->
 
 	<body>
 	<!--<div id="snow>
