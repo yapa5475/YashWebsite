@@ -20,7 +20,7 @@ div.hidden{
 }
 
 .home-bgimg-1 {
-	background-image: url("boulder-bckgd1.jpg");
+	background-image: url("../img/boulder-bckgd1.jpg");
 	min-height: 100%;
 	background-size: 100%;
 }
@@ -30,60 +30,60 @@ div.hidden{
 }
 
 .home-bgimg-about {
-	background-image: url("boulder-bckgd2.jpg");
+	background-image: url("../img/boulder-bckgd2.jpg");
 	min-height: 100%;
 	background-size: 100%
 }
 
 .home-bgimg-contact {
-	background-image: url("hanging_lake.jpg");
+	background-image: url("../img/hanging_lake.jpg");
 	min-height: 100%;
 	background-size: 100%;
 }
 
 .cs-bgimg-1 {
 	/*background-color: red;*/
-	background-image: url("coding1.jpg");
+	background-image: url("../img/coding1.jpg");
 	min-height: 100%;
 	background-size: 100%;
 	/*width: 200%;*/
 }
 
 .cs-bgimg-experience {
-	background-image: url("coding-experience.jpg");
+	background-image: url("../img/coding-experience.jpg");
 	min-height: 85%;
 	background-size: 100%;
 }
 
 .cs-bgimg-skills {
 
-	background-image: url("coding-skills.jpg");
+	background-image: url("../img/coding-skills.jpg");
 	height: 40%;
 	min-height: 82%;
 }
 
 .cs-bgimg-courses {
-	background-image: url("coding-courses.jpg");
+	background-image: url("../img/coding-courses.jpg");
 	min-height: 90%;
 	background-size: 100%;
 }
 
 .echostar-bgimg-1 {
-	background-image: url("coding-skills.jpg");
+	background-image: url("../img/coding-skills.jpg");
 	max-height: 90%;
 	background-size: 100%;
 }
 
 
 .ec-bgimg-1 {
-	background-image: url("ec1.png");
+	background-image: url("../img/ec1.png");
 	min-height: 100%;
 	background-size: 100%;
 }
 
 
 .boulder-bgimg-1 {
-	background-image: url("boulder1.jpg");
+	background-image: url("../img/boulder1.jpg");
 	min-height: 100%;
 	background-size: 100%;
 }
