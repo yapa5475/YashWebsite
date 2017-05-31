@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<!--mysql application password for phpmyadmin: default-->
 <html>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	
 
 	<head>
 		<title>Yash Parekh</title>
+		<link rel="icon" href="yicon.jpg">
+
 
 		<link rel="Stylesheet" type="text/css" href="main.css">
 
@@ -27,6 +28,14 @@
 		</style>
 
 		<script type="text/javascript">
+			function titlesAppear() {
+				var CONTACTTITLE = "Contact", stringCount = 0
+				setInterval(function(){
+					$('#ContactTitleAppear').append(CONTACTTITLE[stringCount]);
+					stringCount +=1;
+				},75);
+			}
+
 			function navAppear() {
 				var Home = "Home", stringCount = 0
 				setInterval(function(){
@@ -55,6 +64,7 @@
 			}
 
 			navAppear();
+			titlesAppear();
 		</script>
 	</head>
 
@@ -70,23 +80,15 @@
 	<br>
 
 	<body>
-
-		<?php
-			echo $_POST['firstname'];
-			echo $_POST['lastname'];
-			echo $_POST['email'];
-			echo $_POST['message'];
-		?>
-
 		<div class="contact-bgimg-1">
 
 			<div class="container" style="background-color: rgba(52, 73, 94, 0.7)">
 				<form>
 					<br><br>
 
-					<span class="border">Contact</span>
+					<span id="ContactTitleAppear" class="border"></span>
 					<br><br>
-						<form action="contactyash.php" method="post"/>
+						<form action="processcontactyash.php" method="post">
 							<div class="form-input">
 								<input style="font-size:20px"  type="text" name="firstname" placeholder="First Name">
 							</div>
