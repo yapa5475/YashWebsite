@@ -56,7 +56,6 @@ div.hidden{
 }
 
 .cs-bgimg-skills {
-
 	background-image: url("../img/coding-skills.jpg");
 	height: 40%;
 	min-height: 82%;
@@ -96,6 +95,13 @@ div.hidden{
 	background-repeat: no-repeat;
 	background-size: 100%;
 	overflow: hidden;
+}
+
+.ucroo-bgimg-1 {
+	/*background-color: #5DADE2;*/
+	background-image: url("../img/ucroo1.jpg")
+	min-height: 100%;
+	background-size: 100%;
 }
 
 .container {

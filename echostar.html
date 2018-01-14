@@ -8,12 +8,20 @@
 
 <html>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!--<script src="javascript.js"-->
 	<head>
-		<title>Echostar-Yash Parekh</title>
+		<title>Echostar - Yash Parekh</title>
 		<link rel="icon" href="../img/yicon.jpg">
 
-		<script type="text/javascript">
-			
+		<script src="/javascript.js" type="text/javascript">
+			$(function () {
+				setTimeout(function() { goToSecondTab(); }, 5000);
+				function goToSecondTab() {
+					window.location.hash = '#Splunk';
+				}
+			});
+		</script>
+		<script>
 			function titlesAppear() {
 				var ECHOSTARTITLE = "ECHOSTAR INTERNSHIP", stringCount = 0
 				setInterval(function(){
@@ -52,7 +60,7 @@
 
 		</script>
 
-		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 
 	</head>
 
@@ -73,12 +81,48 @@
 	</div>
 
 	<body>
-		<div class="echostar-bgimg-1">
+		<div class="home-bgimg-about">
 			<div class="caption">
 				<div>
 					<span id="EchostarTitleAppear" class="border"></span><br><br><br>
 				</div>
 			</div>	
 		</div>
+
+		<div class="home-bgimg-about">
+			<div class="caption">
+				
+				<span class="border" href="javascript:;" style="cursor: pointer;" id="Splunk" onclick="document.getElementById('hideaway').style.display='block';">Splunk
+				<!--<a href="javascript:;" onclick="document.getElementById('hideaway').style.display='block';"></a>-->
+				</span>
+					<h3 id="hideaway" class="border" style="display:none; z-index: 1;">
+						Splunk development project: Important Events Drilldown<br>
+						Contacted SMEs within different DISH Set Top Box events to gather GREP strings to identify for debugging<br>
+						Worked with Splunk engineer to injest necessary logs into Splunk instance<br>
+
+					</h3>				
+			</div>
+		</div>
+
+		<div class="home-bgimg-about">
+			<div class="caption">
+				
+				<span class="border" href="javascript:;" style="cursor: pointer;" onclick="document.getElementById('hideaway2').style.display='block';">Extra classes
+				<!--<a href="javascript:;" onclick="document.getElementById('hideaway').style.display='block';"></a>-->
+				</span>
+					<h3 id="hideaway2" class="border" style="display:none; z-index: 1;">
+						Took extra classes on various topics, such as shell scripting and linux tools<br>
+
+					</h3>				
+			</div>
+		</div>
+		<!--
+		<div class="echostar-bgimg-1">
+			<div class="caption">
+				<div>
+					<span id="EchostarTitleAppear" class="border"></span><br><br><br>
+				</div>
+			</div>	
+		</div>-->
 	</body>
 </html>
