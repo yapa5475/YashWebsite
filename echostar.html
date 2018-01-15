@@ -14,12 +14,16 @@
 		<link rel="icon" href="../img/yicon.jpg">
 
 		<script src="/javascript.js" type="text/javascript">
-			$(function () {
+			$(function scroll() {
+				console.log('Hello World');
+
 				setTimeout(function() { goToSecondTab(); }, 5000);
 				function goToSecondTab() {
 					window.location.hash = '#Splunk';
 				}
 			});
+
+			scroll()
 		</script>
 		<script>
 			function titlesAppear() {
@@ -46,7 +50,13 @@
 					$('#home').append(Home[stringCount]);
 					stringCount += 1;
 				}, 75);
-
+				/*
+				var Back = "Back", stringCount = 0
+				setInterval(function(){
+					$('#back').append(Back[stringCount]);
+					stringCount += 1;
+				}, 75);
+				*/
 				var Yash = "hkeraP hsaY", stringCount1 = Yash.length;
 				setInterval(function(){
 					$('#Yash').append(Yash[stringCount1]);
@@ -54,6 +64,17 @@
 				}, 75);
 
 			}
+
+			function scroll() {
+				console.log('Hello World'); //works
+
+				setTimeout(function() { goToSecondTab(); }, 5000);
+				function goToSecondTab() {
+					window.location.hash = '#Splunk';
+				}
+			}
+
+			scroll()
 
 			navAppear();
 			titlesAppear();
@@ -64,9 +85,10 @@
 
 	</head>
 
-	<div id="adjustednav">
+	<div id="adjustednav" id="Top">
 		<ul>
-			<li style="z-index: 1; position: relative;"><a href="index.html" id="home"></a></li>
+			<li style="z-index: 1; position: relative;"><a href="index.html" id="home"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<li style="z-index: 1; position: relative;"><a href="CS.html" id="back"></a></li>
 			<!--<li><a href="#About">About Me</a>li>-->
 			<li style="position: fixed; padding-left: 80%; color: black;"><a id="Yash"></a></li>
 
@@ -74,9 +96,9 @@
 	</div>
 
 	<div class="sidenav">
-		<a style="font-size: 125%;" href="#Top1" id="Top">Top</a>
-		<a style="font-size: 125%;" href="#Experience1" id="Experience"></a>
-		<a style="font-size: 125%;" href="#Skills1" id="Skills"></a>
+		<a style="font-size: 125%;" href="#Top">Top</a>
+		<a style="font-size: 125%;" href="#Splunk" id="Experience">Splunk</a>
+		<a style="font-size: 125%;" href="#Extra_Classes">Extra Classes</a>
 		<a style="font-size: 125%;" href="#More1" id="More"></a>
 	</div>
 
@@ -92,7 +114,7 @@
 		<div class="home-bgimg-about">
 			<div class="caption">
 				
-				<span class="border" href="javascript:;" style="cursor: pointer;" id="Splunk" onclick="document.getElementById('hideaway').style.display='block';">Splunk
+				<span class="border" href="javascript:;" style="cursor: pointer;" id="Splunk" onclick="document.getElementById('hideaway').style.display='block';" id="Splunk">Splunk
 				<!--<a href="javascript:;" onclick="document.getElementById('hideaway').style.display='block';"></a>-->
 				</span>
 					<h3 id="hideaway" class="border" style="display:none; z-index: 1;">
@@ -107,7 +129,7 @@
 		<div class="home-bgimg-about">
 			<div class="caption">
 				
-				<span class="border" href="javascript:;" style="cursor: pointer;" onclick="document.getElementById('hideaway2').style.display='block';">Extra classes
+				<span class="border" href="javascript:;" style="cursor: pointer;" id="Extra_Classes" onclick="document.getElementById('hideaway2').style.display='block';">Extra classes
 				<!--<a href="javascript:;" onclick="document.getElementById('hideaway').style.display='block';"></a>-->
 				</span>
 					<h3 id="hideaway2" class="border" style="display:none; z-index: 1;">
