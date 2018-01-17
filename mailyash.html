@@ -14,11 +14,11 @@
 
 					<p>Last Name: <input type="text" ng-model="lastname" placeholder="Enter last name here" name="lastname"></p>
 
-					<p>Message: <input type="text" ng-model="message" placeholder="Enter message here" name="message"></p>
+					<p>Message: <input type="textarea" ng-model="message" placeholder="Enter message here" name="message" style="resize: vertical;"></p>
 				
-
-				Your Email: <h3 style="padding-left: 10em;">Hello, my name is {{firstname}} {{lastname}}. {{message}}</h3>
-
+				
+				Your Email: <h3 style="padding-left: 10em;">Hello, my name is {{firstname}} {{lastname}}. <br>{{message}}</h3>
+				</center><center>
 				<br>
 				<input type="submit" value="Send" name="">
 				<br><input type="reset" value="Clear">
