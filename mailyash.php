@@ -20,7 +20,8 @@
 	$formcontent = "From: $firstname $lastname \n Message: $message";
 	$recipient = "yash.parekh223@gmail.com";
 	$subject = "Yash Website: $firstname wants to contact you!";
-	$mailheader = "From: $email \r\n";
+	#$mailheader = "From: $email \r\n";
+	$mailheader = "";
 
 	mail($recipient, $subject, $formcontent, $mailheader) or die("Error");
 	echo "Thank you";
