@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="angular.min.js"></script>
+		<title>Mail Yash</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<form action="mailyash.php" method="POST">
+			<div ng-app="">
+				<center>
+				<p>Your information</p>
+					<p>First Name: <input type="text" ng-model="firstname" placeholder="Enter first name here" name="firstname"></p>
+
+					<p>Last Name: <input type="text" ng-model="lastname" placeholder="Enter last name here" name="lastname"></p>
+
+					<p>Message: <input type="text" ng-model="message" placeholder="Enter message here" name="message"></p>
+				
+
+				Your Email: <h3 style="padding-left: 10em;">Hello, my name is {{firstname}} {{lastname}}. {{message}}</h3>
+
+				<br>
+				<input type="submit" value="Send" name="">
+				<br><input type="reset" value="Clear">
+				</center>
+			</div>
+		</form>
+
+	</body>
+</html>
