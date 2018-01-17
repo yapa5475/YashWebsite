@@ -12,7 +12,7 @@
 	$firstname = $_POST['firstname'];
 	$lastname = $_POST['lastname'];
 	$message = $_POST['message'];
-/*
+
 	echo $firstname;
 	echo $lastname;
 	echo $message;
@@ -24,5 +24,5 @@
 
 	mail($recipient, $subject, $formcontent, $mailheader) or die("Error");
 	echo "Thank you";
-	*/
+	
 ?>
