@@ -33,9 +33,7 @@ if(isset($_POST['submit'])){
     echo ($last_name);
     
     mail($to,$subject,$message,$headers);
-    //header('Location: thankyou.html') - not working
 
-    header("refresh:5;url=http://parekhyash.herokuapp.com/")
 
 
 

@@ -36,4 +36,5 @@
 		"Mail sending failed";
 	}
 	
+	header("refresh:5;url=http://parekhyash.herokuapp.com/")
 ?>
