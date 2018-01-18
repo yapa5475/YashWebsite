@@ -1,6 +1,6 @@
 <?php
 	ini_set('display_errors', 1);
-
+	/*
 	$con = "dbname=ddp4aldlbkqo6j host=ec2-54-235-73-241.compute-1.amazonaws.com
  user=ohtzgwtgrpmoiv password=559436baeb4efdf843f45b1c2dff7cdf1f764d6910cb62cb35d7cdc836595e50 sslmode=require";
 
@@ -32,5 +32,32 @@
 	} else {
 		"Mail sending failed";
 	}
-	
+	*/
+
+	$email_to = "yash.parekh223@gmail.com";
+	$email_subject = "Yash website message notification";
+
+	if(!isset($_POST['firstname']) || !isset($_POST['lastname']) || !isset($_POST['message'])) {
+		echo "There seem to be errors with the form you submitted. Please double check to make sure all required values are filled in.";
+		die();
+	}
+
+	$firstname = $_POST['firstname'];
+	$lastname = $_POST['lastname'];
+	$message = $_POST['message'];
+
+	// ".=" ....?
+	$email_message .= "First Name: ".clean_string($firstname)."\n";
+    $email_message .= "Last Name: ".clean_string($lastname)."\n";
+    $email_message .= "Message: ".clean_string($message)."\n";
+
+    // create email headers
+    $headers = 'From: ' .$firstname. ' ' .$lastname
+
+    @mail($email_to, $email_subject, $email_message, $headers);
+
 ?>
+
+Thank you for contacting me, we will be in touch soon.
+
+-Yash
