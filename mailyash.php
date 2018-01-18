@@ -1,4 +1,6 @@
-<?php 
+<?php
+	ini_set('display_errors', 1);
+
 	$con = "dbname=ddp4aldlbkqo6j host=ec2-54-235-73-241.compute-1.amazonaws.com
  user=ohtzgwtgrpmoiv password=559436baeb4efdf843f45b1c2dff7cdf1f764d6910cb62cb35d7cdc836595e50 sslmode=require";
 
@@ -23,7 +25,12 @@
 	#$mailheader = "From: $email \r\n";
 	$mailheader = "From $email \r\n";
 
-	mail($recipient, $subject, $formcontent, $mailheader) or die("Error");
-	echo "Thank you";
+	$mail = mail($recipient, $subject, $formcontent, $mailheader);
+	# or die("Error");
+	if($mail) {
+		echo "Thank you for reaching out";
+	} else {
+		"Mail sending failed";
+	}
 	
 ?>
