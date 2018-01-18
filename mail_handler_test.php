@@ -35,6 +35,8 @@ if(isset($_POST['submit'])){
     mail($to,$subject,$message,$headers);
     //header('Location: thankyou.html') - not working
 
+    header("refresh:5;url=http://parekhyash.herokuapp.com/")
+
 
 
     //echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
