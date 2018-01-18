@@ -31,6 +31,8 @@ if(isset($_POST['submit'])){
 
     echo ($first_name);
     echo ($last_name);
+
+    echo "You will be redircted back to the homepage in five seconds";
     
     mail($to,$subject,$message,$headers);
 
