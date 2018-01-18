@@ -25,6 +25,9 @@
 	#$mailheader = "From: $email \r\n";
 	$mailheader = "From $email \r\n";
 
+	#echo $formcontent
+	#echo $
+
 	$mail = mail($recipient, $subject, $formcontent, $mailheader);
 	# or die("Error");
 	if($mail) {
