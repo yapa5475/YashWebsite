@@ -1,0 +1,9 @@
+Heroku to connect to database: 
+# heroku pg:psql
+parekhyash::DATABASE=>
+
+table created, called 'Contact'
+id
+first_name
+last_name
+message
