@@ -10,7 +10,7 @@
  		echo "Database connection failed";
  	}
  	else {
- 		echo "Database connection success";
+ 		echo "Database connection success. You will be redircted back to the homepage in five seconds";
  	}
  	//ok till this line
 
