@@ -264,6 +264,15 @@ h2 {
 
 }
 
+h3 {
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  /*background-color: #444;*/
+  /*color: #fff;*/
+}
+
 a {
 	text-decoration: none;
 }
@@ -283,6 +292,18 @@ a:active {
 	width: 10%;
 	border: 5px solid black;
 	margin: auto;
+}
+
+button{
+  font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    background-color: #279;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 

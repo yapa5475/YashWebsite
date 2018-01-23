@@ -24,8 +24,9 @@ if(isset($_POST['submit'])){
     $message = $_POST['message'];
     $subject = "Form submission";
     /*ok till here*/
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message = "Hello, my name is " . $first_name . " " . $last_name . ". \n\n" . $_POST['message'];
     /*ok till line 25*/
+    echo ($message);
 
     $headers = "Message from:" . $first_name;
 

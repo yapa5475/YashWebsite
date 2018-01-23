@@ -5,21 +5,29 @@
 		<title>AngularJS</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
+
 	<body>
 
 		<div ng-app="">
 			<center>
+			<br>
 			<p>Your information</p>
-				<p>First Name: <input type="text" ng-model="firstname" placeholder="Enter first name here"></p>
+				<form action="mail_handler_test.php" method="post">
+					<p>First Name: <input type="text" ng-model="firstname" placeholder="Enter first name here"></p>
 
-				<p>Last Name: <input type="text" ng-model="lastname" placeholder="Enter last name here"></p>
+					<p>Last Name: <input type="text" ng-model="lastname" placeholder="Enter last name here"></p>
 
-				<p>Message: <input type="text" ng-model="message" placeholder="Enter message here"></p>
-			
-
-			Your Email: <h3 style="padding-left: 10em;">Hello, my name is {{firstname}} {{lastname}}. {{message}}</h3>
+					<p>Message: <input type="text" ng-model="message" placeholder="Enter message here"></p>
+				</form>
 			</center>
+			<p style="padding-left: 10em;">Your Email: </p>
+			<h3 style="padding-left: 10em;">Hello, my name is {{firstname}} {{lastname}}. <br>{{message}}</h3>
+			
 		</div>
 
 	</body>
+
+	<center>
+	<button>Send</button>
+	</center>
 </html>
